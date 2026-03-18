@@ -1,0 +1,44 @@
+repos:
+  enhancements:
+    url: https://github.com/kubernetes/enhancements.git
+    sparse: [keps/]
+  community:
+    url: https://github.com/kubernetes/community.git
+    sparse: [contributors/devel/]
+  website:
+    url: https://github.com/kubernetes/website.git
+    sparse: [content/en/docs/]
+
+docs:
+  api-conventions:
+    repo: community
+    path: contributors/devel/sig-architecture/api-conventions.md
+    description: "Core API conventions: naming, spec/status, lists, concurrency control, defaulting, validation"
+  api-changes:
+    repo: community
+    path: contributors/devel/sig-architecture/api_changes.md
+    description: "How to make API changes: compatibility rules, versioning, conversion"
+  conventions:
+    repo: community
+    path: contributors/devel/sig-architecture/conventions.md
+    description: "General coding conventions for Kubernetes"
+  controllers:
+    repo: community
+    path: contributors/devel/sig-api-machinery/controllers.md
+    description: "Writing controllers: informers, work queues, reconciliation patterns"
+  admission-control:
+    repo: community
+    path: contributors/devel/sig-api-machinery/admission-control.md
+    description: "How admission control works, writing admission webhooks"
+  api-concepts:
+    repo: website
+    path: content/en/docs/reference/using-api/api-concepts.md
+    description: "Kubernetes API concepts: resource types, API groups, API discovery, request verbs"
+  custom-resources:
+    repo: website
+    path: content/en/docs/concepts/extend-kubernetes/api-extension/custom-resources.md
+    description: "Custom resources and CRDs: when to use them, how they work, design considerations"
+  server-side-apply:
+    repo: website
+    path: content/en/docs/reference/using-api/server-side-apply.md
+    description: "Server-side apply: field management, merge strategies, conflict resolution"
